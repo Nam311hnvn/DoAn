@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {   
-    Damageable damageable;
+    Damageable damageable; 
 
     public Slider healthSlider;
     public TMP_Text healthBarText;

@@ -18,12 +18,12 @@ public class Blessings : MonoBehaviour
     {
 
         new Blessing{Name = "Max Health",Description ="Increase X Max health ",Rarity ="rare",Increase=20},
-        new Blessing{Name = "Health",Description ="Increase X health ",Rarity ="common",Increase=20},
-        new Blessing{Name = "Walk Speed",Description ="Increase walk speed by X%",Rarity ="common",Increase=10},
-        new Blessing{Name = "Run Speed",Description ="Increase run speed by X%",Rarity ="rare",Increase=10},
-        new Blessing{Name = "Air Speed",Description ="Increase air speed by X%",Rarity ="common",Increase=10},
-        new Blessing{Name = "Jump Impulse",Description ="Increase jump impulse by X%",Rarity ="common",Increase=10},
-        new Blessing{Name = "Attack Damage",Description ="Increase atk dmg by X%",Rarity ="rare",Increase=5},
+        new Blessing{Name = "Health",Description ="Increase X health ",Rarity ="common",Increase=40},
+        new Blessing{Name = "Walk Speed",Description ="Increase walk speed by X",Rarity ="common",Increase=1},
+        new Blessing{Name = "Run Speed",Description ="Increase run speed by X",Rarity ="rare",Increase=2},
+        new Blessing{Name = "Air Speed",Description ="Increase air speed by X",Rarity ="common",Increase=1},
+        new Blessing{Name = "Jump Impulse",Description ="Increase jump impulse by X",Rarity ="common",Increase=1},
+        new Blessing{Name = "Attack Damage",Description ="Increase atk dmg by X",Rarity ="rare",Increase=10},
         new Blessing{Name = "Melee Knockback",Description ="Increase knockback by X",Rarity ="epic",Increase=1}
     };
 
@@ -101,19 +101,19 @@ public class Blessings : MonoBehaviour
         }
         else if (Blessing_chosen == "Health")
         {
-            gameDataManager.gameData.health += 20;
+            gameDataManager.gameData.health += 40;
 
             Debug.Log("Health");
         }
         else if (Blessing_chosen == "Walk Speed")
         {
 
-            gameDataManager.gameData.walkSpeed += 10;
+            gameDataManager.gameData.walkSpeed += 1;
             Debug.Log("Walk Speed");
         }
         else if (Blessing_chosen == "Run Speed")
         {
-            gameDataManager.gameData.runSpeed += 10;
+            gameDataManager.gameData.runSpeed += 1;
             Debug.Log("Run Speed");
         }
         else if (Blessing_chosen == "Air Speed")

@@ -935,7 +935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchPoint: {fileID: 3239409491424272082}
   projectilePrefab: {fileID: 4333236550046011807, guid: 201e789c3f5d7ed46964542290046a01, type: 3}
-  projectilePrefab2: {fileID: 0}
+  projectilePrefab2: {fileID: 4333236550046011807, guid: f3661c9dd08122e45ab3844303bd5cbb, type: 3}
   isBow1: 0
 --- !u!114 &2199274363056824784
 MonoBehaviour:

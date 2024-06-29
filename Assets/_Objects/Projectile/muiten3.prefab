@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   moveSpeed: {x: 8, y: 0}
-  knockback: {x: 5, y: 0}
+  knockback: {x: 1, y: 0}
 --- !u!50 &1205612878729270236
 Rigidbody2D:
   serializedVersion: 4

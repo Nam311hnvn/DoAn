@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3035465695313125375}
   - component: {fileID: 8106731327458987246}
   - component: {fileID: 2061244243310259353}
+  - component: {fileID: 6455392935443371844}
+  - component: {fileID: 4179306003307152531}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -142,3 +144,29 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6455392935443371844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9065795783176318476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 372de54630be5ce4fa83d4a4542702be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
+--- !u!114 &4179306003307152531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9065795783176318476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d49a8ef66984ee746bd771875311c641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamePauseUI: {fileID: 0}

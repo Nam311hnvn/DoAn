@@ -7,7 +7,7 @@ using UnityEditor;
 public class LevelMove : MonoBehaviour
 {
     public int levelMap;
-    public int sceneBuildIndex;
+    int sceneBuildIndex;
     private int countMap = 2;
     GameObject[] enemyCount;   
 
@@ -37,12 +37,11 @@ public class LevelMove : MonoBehaviour
         }
         else if (levelMap == 2)
         {
-            return Random.Range(4,6);
-            
+            return Random.Range(4,6);           
         }
         else
         {
-            return 9;        
+            return 6;        
         }
     }
 }

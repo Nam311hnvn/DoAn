@@ -6,13 +6,15 @@ using UnityEngine.Events;
 public class Damageable : MonoBehaviour/*, IDataPersistence*/
 {
     [SerializeField] private string id;
+/*
+    [ContextMenu("Generate guid for id")]*/
 
-    [ContextMenu("Generate guid for id")]
+    public DeadMenu deadMenuManager;
 
-    private void GenerateGuid()
+  /*  private void GenerateGuid()
     {
         id = System.Guid.NewGuid().ToString();
-    }
+    }*/
 
 
     GameData gameData;
@@ -58,6 +60,7 @@ public class Damageable : MonoBehaviour/*, IDataPersistence*/
             if (_health <= 0)
             {
                 IsAlive = false;
+                deadMenuManager.GameOver();
             }
         }
     }
@@ -94,28 +97,6 @@ public class Damageable : MonoBehaviour/*, IDataPersistence*/
     {
         animator = GetComponent<Animator>();
     }
-
-    //cách gọi lỗi thời
-    //private void LoadData(GameData data)
-    //{
-      //  this.Health = data.Health;
-    //}
-
-    //private void SaveData(ref GameData data)
-    //{
-      //  data.Health = this.Health;
-    //}
-    /*void IDataPersistence.LoadData(GameData data)
-    {   
-        this.Health = data.Health;
-    }
-
-    void IDataPersistence.SaveData(ref GameData data)
-    {   
-
-        Debug.Log("Health now"+ data.Health);
-        data.Health = this.Health;
-    }*/
 
     public void Update()
     {
@@ -160,16 +141,5 @@ public class Damageable : MonoBehaviour/*, IDataPersistence*/
             CharacterEvents.characterHealed.Invoke(gameObject, actualHeal);
         }
     }
-   /* private void OnTriggerEnter2D(Collider2D collision)
-    {
-        IDataPersistence damageable = collision.GetComponent<IDataPersistence>();
-        if (damageable != null)
-        {
-            if (collision.CompareTag("Player"))
-            {
-                Debug.Log("Da xu ly va cham"+ gameData.transform.name);              
-            }
-        }
-    }*/
 }
 
