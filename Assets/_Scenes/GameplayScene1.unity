@@ -131,9 +131,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 846178776713725494, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 846178776713725494, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 846178776713725494, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 846178776713725494, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1009355325700802816, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
       propertyPath: m_Name
       value: BlessingCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009355325700802816, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384815724947734609, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384815724947734609, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384815724947734609, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1384815724947734609, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536687573478373599, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536687573478373599, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536687573478373599, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536687573478373599, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3335528587516688403, guid: a96ed48eff3142947a4fffbd773cc7f9, type: 3}
       propertyPath: gameDataManager
@@ -596,6 +648,10 @@ PrefabInstance:
     - target: {fileID: 1078886210936615518, guid: 31db73822ae05db41ae193a26bc37560, type: 3}
       propertyPath: attackDamage
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335791339345155421, guid: 31db73822ae05db41ae193a26bc37560, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1643357432462908822, guid: 31db73822ae05db41ae193a26bc37560, type: 3}
       propertyPath: launchPoint
@@ -33558,7 +33614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1617a34e02f2bd0499f7a5a87c62281a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameText: {fileID: 0}
 --- !u!1001 &1011796207
 PrefabInstance:
   m_ObjectHideFlags: 0
