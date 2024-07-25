@@ -91,6 +91,11 @@ public class Knight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       OnAttack();
+    }
+
+    private void OnAttack()
+    {
         HasTarget = attackZone.detectedColliders.Count > 0;
 
         if (AttackCD > 0)
@@ -99,7 +104,6 @@ public class Knight : MonoBehaviour
             AttackCD -= Time.deltaTime;
         }
     }
-
     //xu ly cac func lquan den vat ly
     private void FixedUpdate()
     {

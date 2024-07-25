@@ -6,21 +6,22 @@ using UnityEngine.Events;
 public class Damageable : MonoBehaviour/*, IDataPersistence*/
 {
     [SerializeField] private string id;
-/*
-    [ContextMenu("Generate guid for id")]*/
+    /*
+        [ContextMenu("Generate guid for id")]*/
 
     public DeadMenu deadMenuManager;
+    public bool isPlayer = false;
 
-  /*  private void GenerateGuid()
-    {
-        id = System.Guid.NewGuid().ToString();
-    }*/
+    /*  private void GenerateGuid()
+      {
+          id = System.Guid.NewGuid().ToString();
+      }*/
 
 
     GameData gameData;
     public UnityEvent<int, Vector2> damageableHit;//unity event dung de tao event trong script tren unity
     Animator animator;
-    public UnityEvent<int,int> healthChanged;
+    public UnityEvent<int, int> healthChanged;
 
 
 
@@ -31,14 +32,14 @@ public class Damageable : MonoBehaviour/*, IDataPersistence*/
     public float timeSinceHit = 0;
     public float invincibilityTime = 0.2f;
 
-    
+
     public int MaxHealth
     {
         get
         {
             return _maxHealth;
         }
-         set
+        set
         {
             _maxHealth = value;
         }
@@ -50,22 +51,25 @@ public class Damageable : MonoBehaviour/*, IDataPersistence*/
     {
         get
         {
-            return _health;         
+            return _health;
         }
         set
         {
             _health = value;
-            healthChanged?.Invoke(_health,MaxHealth);
+            healthChanged?.Invoke(_health, MaxHealth);
 
             if (_health <= 0)
             {
                 IsAlive = false;
-                deadMenuManager.GameOver();
+                if (isPlayer == true)
+                {
+                    deadMenuManager.GameOver();
+                }
             }
         }
     }
 
-    [SerializeField]private bool _isAlive = true;
+    [SerializeField] private bool _isAlive = true;
 
     public bool IsAlive
     {
@@ -133,8 +137,8 @@ public class Damageable : MonoBehaviour/*, IDataPersistence*/
 
     public void Heal(int healthRestore)
     {
-        if(IsAlive)
-        {   
+        if (IsAlive)
+        {
             int maxHeal = Mathf.Max(MaxHealth - Health, 0);
             int actualHeal = Mathf.Min(maxHeal, healthRestore);
             Health += actualHeal;

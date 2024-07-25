@@ -13,9 +13,5 @@ public class GameData
     public float airSpeed = 5;
     public float jumpImpulse = 10;
     public int attackDamage = 15;
-    public Vector2 meleeKnockback = new Vector2(2,0);
-    /*public int projectileDamage;*/
-    /*public Vector2 farKnockback;
-    public Vector2 projectileMovespeed;*/
-  
+    public Vector2 meleeKnockback = new Vector2(2,0); 
 }

@@ -950,6 +950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: c8c1b38b-77a3-4a41-8bdf-a3d940f4b26a
+  deadMenuManager: {fileID: 0}
+  isPlayer: 1
   damageableHit:
     m_PersistentCalls:
       m_Calls:

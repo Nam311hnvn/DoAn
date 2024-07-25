@@ -17,8 +17,7 @@ public class DataPersistencemanager : MonoBehaviour
     public static DataPersistencemanager Instance { get; private set; }
 
     private void Awake()
-    {       
-        /*gameData = GetComponent<GameData>();*/
+    {              
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, FileName);
         
     }

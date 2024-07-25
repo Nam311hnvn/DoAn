@@ -10,25 +10,24 @@ public class GameDataManager : MonoBehaviour
     Damageable damageable;
     Attack meleeAttack;
     PlayerController playerStat;
-    Projectile farDamage;
+    
 
     private void Awake()
     {
         damageable = GetComponent<Damageable>();
         meleeAttack = GetComponentInChildren<Attack>();
-        playerStat = GetComponent<PlayerController>();
-        farDamage = GetComponentInChildren<Projectile>();
+        playerStat = GetComponent<PlayerController>();       
         LoadData();
     }
     public void LoadData()
     {
-        damageable.MaxHealth = gameData.maxHealth;//chay
+        damageable.MaxHealth = gameData.maxHealth;
 
         damageable.Health = gameData.health;
 
-        playerStat.walkSpeed = gameData.walkSpeed;//chay
+        playerStat.walkSpeed = gameData.walkSpeed;
 
-        playerStat.runSpeed = gameData.runSpeed;//chay
+        playerStat.runSpeed = gameData.runSpeed;
 
         playerStat.airSpeed = gameData.airSpeed;
 
@@ -55,16 +54,7 @@ public class GameDataManager : MonoBehaviour
 
         gameData.attackDamage = meleeAttack.attackDamage;
 
-        gameData.meleeKnockback = meleeAttack.knockback;
-
-        //ko xu ly duoc do ko nhet obj vao hierarchy 
-        /*projectileDamage = farDamage.damage;
-
-        farKnockback = farDamage.knockback;
-
-        projectileMovespeed = farDamage.moveSpeed;*/
+        gameData.meleeKnockback = meleeAttack.knockback;      
     }
     
-
-
 }

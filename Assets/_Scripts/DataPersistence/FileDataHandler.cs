@@ -22,26 +22,7 @@ public class FileDataHandler
         string fullPath = Path.Combine(dataDirPath, dataFileName);
         /*GameData loadedData = null;*/
         if (File.Exists(fullPath))
-        {
-            /*try
-            {
-                //load serialize data from file
-                string dataToLoad = "";
-                using (FileStream stream = new FileStream(fullPath, FileMode.Open))
-                {
-                    using(StreamReader reader = new StreamReader(stream))
-                    {
-                        dataToLoad = reader.ReadToEnd();
-                    }
-                }
-                //deserialize data from Json to C# obj
-                loadedData = JsonConvert.DeserializeObject<GameData>(dataToLoad);
-                *//*loadedData = JsonUtility.FromJson<GameData>(dataToLoad);   *//*
-            }
-            catch (Exception e)
-            {
-                Debug.LogError("Error occured when trying to load data from file:" +fullPath+ "\n" + e);
-            }*/
+        {           
             string content = File.ReadAllText(fullPath);
             Debug.Log("fileHandleContent: "+content);
             if (string.IsNullOrEmpty(content))

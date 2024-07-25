@@ -8,7 +8,7 @@ public class LevelMove : MonoBehaviour
 {
     public int levelMap;
     int sceneBuildIndex;
-    private int countMap = 2;
+    /*private int countMap = 2;*/
     GameObject[] enemyCount;   
 
 

@@ -51,8 +51,5 @@ public class UIManager : MonoBehaviour
         tmpText.text = healthRestored.ToString();
     }
 
-    public void Quitgame()
-    {
-        Application.Quit();
-    }
+   
 }
